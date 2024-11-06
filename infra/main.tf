@@ -9,3 +9,8 @@ terraform {
 module "s3" {
   source = "./modules/s3"
 }
+
+module "iam" {
+  source = "./modules/iam"
+  aws_s3_bucket_peft_arn = module.s3.aws_s3_bucket_peft_arn
+}
