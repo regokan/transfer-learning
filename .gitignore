@@ -1,0 +1,28 @@
+# All local terraform files
+_*.tf
+
+# environment file
+.env
+
+# Python virtual environment
+venv
+.venv
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints
+
+# Python Cache file
+__pycache__
+
+# Ignore Terraform files
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform
+terraform.tfstate.d
+
+# local data folder
+data
+
+# local model folder
+model
