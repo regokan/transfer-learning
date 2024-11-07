@@ -26,3 +26,6 @@ data
 
 # local model folder
 model
+
+# Local files
+*local
