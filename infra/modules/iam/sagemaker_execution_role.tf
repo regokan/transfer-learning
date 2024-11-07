@@ -28,22 +28,22 @@ resource "aws_iam_role_policy_attachment" "sagemaker_execution_role_sagemaker_ac
 }
 
 resource "aws_iam_policy" "s3_access" {
-    name = "s3_access"
+  name = "s3_access"
 
-    policy = jsonencode({
-        Version = "2012-10-17",
-        Statement = [
-            {
-                Action = [
-                    "s3:*",
-                ]
-                Effect   = "Allow"
-                Resource = [
-                    var.aws_s3_bucket_peft_arn,
-                    "${var.aws_s3_bucket_peft_arn}/*",
-                ]
-            }
+  policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Action = [
+          "s3:*",
         ]
+        Effect = "Allow"
+        Resource = [
+          var.aws_s3_bucket_peft_arn,
+          "${var.aws_s3_bucket_peft_arn}/*",
+        ]
+      }
+    ]
   })
 }
 

@@ -3,5 +3,5 @@ output "peft_bucket" {
 }
 
 output "peft_sagemaker_execution_role" {
-  value = module.iam.aws_iam_role_peft_sagemaker_execution_role_arn
+  value = module.iam.aws_iam_role_sagemaker_execution_role_arn
 }
