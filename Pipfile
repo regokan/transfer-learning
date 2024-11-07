@@ -12,11 +12,11 @@ datasets = "*"
 python-dotenv = "*"
 argparse = "*"
 sagemaker = "*"
-black = {extras = ["jupyter"], version = "*"}
 kaggle = "*"
 sentencepiece = "*"
 jupyter-nbextensions-configurator = "*"
 boto3 = "*"
+black = {extras = ["jupyter"], version = "*"}
 
 [dev-packages]
 
